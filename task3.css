@@ -1,0 +1,126 @@
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+  body {
+    background-color: #51435d;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  #todo {
+    width: 30%;
+    height: 65vh;
+    background-color: #3c2c4d;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  #todo h1 {
+    padding: 15px 0;
+    font-size: 1.5rem;
+  }
+  
+  .task-list {
+    list-style: none;
+    overflow-y: auto;
+    max-height: 45vh;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  .task-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #362d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .task-list li:hover {
+    background-color: #4a3b52;
+  }
+  
+  #addtask {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #3c2c4d;
+    border-top: 1px solid #51435d;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .search {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #51435d;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  #task {
+    padding: 8px 12px;
+    border: none;
+    background-color: #362d3d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #task:hover {
+    background-color: #51435d;
+  }
+  
+  .delete-btn {
+    background-color: #51435d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff4d4d;
+  }
+  
+  @media (max-width: 768px) {
+    #todo {
+      width: 80%;
+      height: auto;
+    }
+  
+    .task-list {
+      max-height: 50vh;
+    }
+  
+    #task {
+      width: 60%;
+    }
+  }
+  
